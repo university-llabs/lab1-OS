@@ -13,7 +13,6 @@ int main() {
     HANDLE hThread;
     unsigned threadID;
 
-   
     hThread = (HANDLE)_beginthreadex(
         NULL,           // Безопасность по умолчанию
         0,              // Размер стека по умолчанию
