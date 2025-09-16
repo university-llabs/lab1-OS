@@ -63,7 +63,8 @@ int main() {
     cout << "Thread suspended. Sleeping for " << suspend_time << " ms..." << endl;
     Sleep(suspend_time);
     ResumeThread(worker);
-    //WaitForSingleObject(worker, INFINITE);
+
+    WaitForSingleObject(worker, INFINITE);
 
     cout << "Elements divisible by 5: ";
     if (data.multiples.empty()) cout << "none found";
